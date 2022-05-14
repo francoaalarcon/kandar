@@ -203,7 +203,11 @@
   }
 }
 
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+  .whatsappfloat{
+      right: 18px !important;
+  }
+}
 
 @media (max-width: 420px) {
   .client_section .client_container div#carouselExampleControls::before {
