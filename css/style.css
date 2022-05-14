@@ -436,6 +436,10 @@ a:focus {
   color: #ffffff;
 }
 
+.mbtitlefor2{
+  display: none;
+}
+
 .formfloat{
   width: 500px;
   padding: 35px;
