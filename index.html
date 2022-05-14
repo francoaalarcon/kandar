@@ -27,13 +27,22 @@
 </head>
 
 <body>
+  <div id="myNav" class="overlay">
+    <div class="overlay-content">
+      <a href="#hid1" onclick="openNav()">INICIO</a>
+      <a href="#hid2" onclick="openNav()">NUESTRAS LOTIZACIONES</a>
+      <a href="#hid3" onclick="openNav()">COMO SER PROPIETARIO</a>
+      <a href="#hid4" onclick="openNav()">CLIENTES</a>
+      <a href="#hid5" onclick="openNav()">AVANCES DEL PROYECTO</a>
+    </div>
+  </div>
   <div class="hero_area">
     <!-- header section strats -->
-    <header class="header_section">
+    <header class="header_section" data-aos="fade-down">
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container">
           <a class="navbar-brand lg1" href="index.html">
-            <img src="images/logo.png" alt="" />
+            <img src="images/logo2.png" alt="" />
           </a>
           <a class="navbar-brand lg2" href="index.html">
             <img src="images/logo2.png" alt="" />
@@ -65,47 +74,63 @@
                 </span>
               </button>
             </div>
-            <div id="myNav" class="overlay">
-              <div class="overlay-content">
-                <a href="#">HOME</a>
-                <a href="#">ABOUT</a>
-                <a href="#">HOUSE</a>
-                <a href="#">PRICING</a>
-                <a href="#">CONTACT US</a>
-              </div>
-            </div>
           </div>
         </nav>
       </div>
     </header>
-    <div class="headerspace"></div>
+    <div class="headerspace" id="hid1"></div>
     <!-- end header section -->
     <!-- slider section -->
     <section class="slider_section ">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-4 offset-md-1">
-            <div class="detail-box">
+          <div class="col-md-5 offset-md-1">
+            <div class="detail-box" data-aos="fade-right">
               <h1>
-                <span> Nombre</span> <br>
-                Terrenos <br>
-                Venta
+                UN NUEVO<br>
+                <span>CONCEPTO</span><br>
+                DE CIUDAD<br> EN EL PERÚ
               </h1>
-              <p>
+              <!-- <p>
                 It is a long established fact that a reader will be distracted by the readable content of
-              </p>
+              </p> -->
               <div class="btn-box">
                 <a href="" class="">
-                  Leer más
+                  Ver más
                 </a>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <div class="formfloat" data-aos="fade-left">
+        <h2>¡Contáctanos!</h2>
+        <div class="form_container">
+          <form action="">
+            <div>
+              <input type="text" placeholder="Nombres" />
+            </div>
+            <div>
+              <input type="email" placeholder="Email" />
+            </div>
+            <div>
+              <input type="text" placeholder="Teléfono" />
+            </div>
+            <div>
+              <input type="text" class="message-box" placeholder="Mensaje" />
+            </div>
+            <div class="d-flex ">
+              <button>
+                Enviar
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
     </section>
     <!-- end slider section -->
   </div>
+  <div class="headerspace"></div>
 
   <!-- find section -->
   <!-- <section class="find_section ">
@@ -142,24 +167,57 @@
       <div class="row">
         <div class="col-md-6">
           <div class="img-box">
-            <img src="images/about-img.jpg" alt="">
+            <img src="images/about-img-1.jpg" alt="">
           </div>
         </div>
         <div class="col-md-6">
           <div class="detail-box">
             <div class="heading_container">
               <h2>
-                Acerca de nuestro apartamento
+                PRIMERA CIUDAD TECNOECOLÓGICA DEL PERÚ
               </h2>
             </div>
             <p>
-              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
-              in
-              some form, by injected humour, or randomised words
+              Un proyecto único en la historia del Perú. La ciudad planificada, contará con el 40% de áreas verdes, pistas amplias, Colegios, Centros financieros y Comerciales.
             </p>
-            <a href="">
+            <!-- <a href="">
               Leer más
-            </a>
+            </a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end about section -->
+
+
+  <!-- about section -->
+
+  <section class="about_section layout_padding-bottom" data-aos="fade-up">
+    <div class="square-box-2">
+      <img src="images/square.png" alt="">
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                CAMBIEMOS JUNTOS TU FUTURO
+              </h2>
+            </div>
+            <p>
+              “Eleva tu calidad de vida y la de tu familia”
+            </p>
+            <!-- <a href="">
+              Leer más
+            </a> -->
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="img-box">
+            <img src="images/about-img-2.jpg" alt="">
           </div>
         </div>
       </div>
@@ -170,15 +228,16 @@
 
   <!-- sale section -->
 
+  <div class="headerspace" id="hid2"></div>
   <section class="sale_section layout_padding-bottom" data-aos="fade-up">
     <div class="container-fluid">
       <div class="heading_container">
         <h2>
-          Terreno en venta
+          NUESTRAS LOTIZACIONES
         </h2>
-        <p>
+        <!-- <p>
           There are many variations of passages of Lorem Ipsum available, but the
-        </p>
+        </p> -->
       </div>
       <div class="sale_container">
         <div class="box" data-aos="zoom-in">
@@ -187,10 +246,10 @@
           </div>
           <div class="detail-box">
             <h6>
-              Nombre
+              LOS FRUTALES							
             </h6>
             <p>
-              There are many variations of passages of Lorem Ipsum available, but
+              Lotes de 500m2, rodeados de grandes parques con árboles frutales, donde podrá construir su casa con todas las comodidades.
             </p>
           </div>
         </div>
@@ -200,10 +259,10 @@
           </div>
           <div class="detail-box">
             <h6>
-              Nombre
+              LAS LADERAS
             </h6>
             <p>
-              There are many variations of passages of Lorem Ipsum available, but
+              Lotes de 500m2 entre las colinas de la Nueva Lima, con una hermosa vista, donde podrá construir su casa con todas las comodidades.
             </p>
           </div>
         </div>
@@ -213,49 +272,10 @@
           </div>
           <div class="detail-box">
             <h6>
-              Nombre
+              LAS DUNAS III							
             </h6>
             <p>
-              There are many variations of passages of Lorem Ipsum available, but
-            </p>
-          </div>
-        </div>
-        <div class="box" data-aos="zoom-in">
-          <div class="img-box">
-            <img src="images/s-4.jpg" alt="">
-          </div>
-          <div class="detail-box">
-            <h6>
-              Nombre
-            </h6>
-            <p>
-              There are many variations of passages of Lorem Ipsum available, but
-            </p>
-          </div>
-        </div>
-        <div class="box" data-aos="zoom-in">
-          <div class="img-box">
-            <img src="images/s-5.jpg" alt="">
-          </div>
-          <div class="detail-box">
-            <h6>
-              Nombre
-            </h6>
-            <p>
-              There are many variations of passages of Lorem Ipsum available, but
-            </p>
-          </div>
-        </div>
-        <div class="box" data-aos="zoom-in">
-          <div class="img-box">
-            <img src="images/s-6.jpg" alt="">
-          </div>
-          <div class="detail-box">
-            <h6>
-              Nombre
-            </h6>
-            <p>
-              There are many variations of passages of Lorem Ipsum available, but
+              Lotes de 125 m2, ubicados cerca de la siguiente expansión de la Ciudad, con una hermosa vista del horizonte del mar.
             </p>
           </div>
         </div>
@@ -272,7 +292,7 @@
 
   <!-- price section -->
 
-  <section class="price_section layout_padding-bottom" data-aos="fade-up">
+  <!-- <section class="price_section layout_padding-bottom" data-aos="fade-up">
     <div class="container">
       <div class="heading_container">
         <h2>
@@ -411,7 +431,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
   <!-- end price section -->
 
   <!-- deal section -->
@@ -454,15 +474,16 @@
 
 
   <!-- us section -->
+  <div class="headerspace" id="hid3"></div>
   <section class="us_section layout_padding2" data-aos="fade-up">
 
     <div class="container">
       <div class="heading_container">
         <h2>
-          Porque escogernos?
+          Pasos para ser propietario de Nueva Lima:
         </h2>
       </div>
-      <div class="row">
+      <div class="row d-flex justify-content-center">
         <div class="col-md-3 col-sm-6">
           <div class="box">
             <div class="img-box">
@@ -470,10 +491,10 @@
             </div>
             <div class="detail-box">
               <h3 class="price">
-                1000+
+                
               </h3>
               <h5>
-                Years of House
+                Separa tu lote $100 o $360.
               </h5>
             </div>
           </div>
@@ -485,10 +506,10 @@
             </div>
             <div class="detail-box">
               <h3>
-                20000+
+                
               </h3>
               <h5>
-                Projects Delivered
+                Conoce la Nueva Lima en el KM. 120 Panamericana Sur.
               </h5>
             </div>
           </div>
@@ -500,33 +521,18 @@
             </div>
             <div class="detail-box">
               <h3>
-                10000+
+              
               </h3>
               <h5>
-                Satisfied Customers
-              </h5>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/u-4.png" alt="">
-            </div>
-            <div class="detail-box">
-              <h3>
-                1500+
-              </h3>
-              <h5>
-                Cheap Rates
+                Firma de contrato de compra venta bien futuro.
               </h5>
             </div>
           </div>
         </div>
       </div>
       <div class="btn-box">
-        <a href="">
-          Get A Quote
+        <a href="#hid1">
+          Quiero mi lote
         </a>
       </div>
     </div>
@@ -535,12 +541,13 @@
   <!-- end us section -->
 
   <!-- client secction -->
+  <div class="headerspace" id="hid4"></div>
 
   <section class="client_section layout_padding" data-aos="fade-up">
     <div class="container-fluid">
       <div class="heading_container">
         <h2>
-          Que dicen nuestros clientes
+          Clientes Felices
         </h2>
       </div>
       <div class="client_container">
@@ -548,7 +555,7 @@
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="box">
-                <div class="img-box">
+                <!-- <div class="img-box">
                   <img src="images/client.jpg" alt="">
                 </div>
                 <div class="detail-box">
@@ -561,42 +568,50 @@
                     alteration
                     in some form, by injected humour, or randomised words which don't look even slightly believable.
                   </p>
+                </div> -->
+                <div class="col-md-3 col-sm-3">
+                  <img src="images/clientes/1.jpeg" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-3 col-sm-3">
+                  <img src="images/clientes/2.jpeg" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-3 col-sm-3">
+                  <img src="images/clientes/3.jpeg" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-3 col-sm-3">
+                  <img src="images/clientes/4.jpeg" alt="" class="img-fluid">
                 </div>
               </div>
             </div>
             <div class="carousel-item">
               <div class="box">
-                <div class="img-box">
-                  <img src="images/client.jpg" alt="">
+                <div class="col-md-3 col-sm-3">
+                  <img src="images/clientes/1.jpeg" alt="" class="img-fluid">
                 </div>
-                <div class="detail-box">
-                  <h5>
-                    <span>Majority</span>
-                    <hr>
-                  </h5>
-                  <p>
-                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                    alteration
-                    in some form, by injected humour, or randomised words which don't look even slightly believable.
-                  </p>
+                <div class="col-md-3 col-sm-3">
+                  <img src="images/clientes/2.jpeg" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-3 col-sm-3">
+                  <img src="images/clientes/3.jpeg" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-3 col-sm-3">
+                  <img src="images/clientes/4.jpeg" alt="" class="img-fluid">
                 </div>
               </div>
             </div>
             <div class="carousel-item">
               <div class="box">
-                <div class="img-box">
-                  <img src="images/client.jpg" alt="">
+                <div class="col-md-3 col-sm-3">
+                  <img src="images/clientes/1.jpeg" alt="" class="img-fluid">
                 </div>
-                <div class="detail-box">
-                  <h5>
-                    <span>Majority</span>
-                    <hr>
-                  </h5>
-                  <p>
-                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                    alteration
-                    in some form, by injected humour, or randomised words which don't look even slightly believable.
-                  </p>
+                <div class="col-md-3 col-sm-3">
+                  <img src="images/clientes/2.jpeg" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-3 col-sm-3">
+                  <img src="images/clientes/3.jpeg" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-3 col-sm-3">
+                  <img src="images/clientes/4.jpeg" alt="" class="img-fluid">
                 </div>
               </div>
             </div>
@@ -615,6 +630,61 @@
 
   <!-- end client section -->
 
+  <!-- sale section -->
+
+  <div class="headerspace" id="hid5"></div>
+  <section class="sale_section layout_padding-bottom" data-aos="fade-up">
+    <div class="container-fluid">
+      <div class="heading_container">
+        <h2>
+          AVANCES DEL PROYECTO 2021
+        </h2>
+        <!-- <p>
+          There are many variations of passages of Lorem Ipsum available, but the
+        </p> -->
+      </div>
+      <div class="sale_container">
+        <div class="box" data-aos="zoom-in">
+          <div class="img-box">
+            <img src="images/e1.jpg" alt="">
+          </div>
+        </div>
+        <div class="box" data-aos="zoom-in">
+          <div class="img-box">
+            <img src="images/e2.jpg" alt="">
+          </div>
+        </div>
+        <div class="box" data-aos="zoom-in">
+          <div class="img-box">
+            <img src="images/e3.jpg" alt="">
+          </div>
+        </div>
+        <div class="box" data-aos="zoom-in">
+          <div class="img-box">
+            <img src="images/e4.jpg" alt="">
+          </div>
+        </div>
+        <div class="box" data-aos="zoom-in">
+          <div class="img-box">
+            <img src="images/e5.jpg" alt="">
+          </div>
+        </div>
+        <div class="box" data-aos="zoom-in">
+          <div class="img-box">
+            <img src="images/e6.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="btn-box">
+        <a href="house.html">
+          Encontrar mas
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- end sale section -->
+
   <!-- contact section -->
 
   <section class="contact_section " data-aos="fade-up">
@@ -630,7 +700,7 @@
         <div class="col-md-6 px-0">
           <div class="map_container">
             <div class="map-responsive">
-              <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Eiffel+Tower+Paris+France" width="600" height="300" frameborder="0" style="border:0; width: 100%; height:100%" allowfullscreen></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.691908428659!2d-76.50065718463867!3d-12.927512562429017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x910559d6096655d3%3A0x8e8f7c8a1aa39ecf!2sCarr.%20Panamericana%20Sur%20120%2C%20Cerro%20Azul%2018000!5e0!3m2!1ses!2spe!4v1652542746211!5m2!1ses!2spe" width="600" height="300" frameborder="0" style="border:0; width: 100%; height:100%" allowfullscreen></iframe>
             </div>
           </div>
         </div>
@@ -638,20 +708,20 @@
           <div class="form_container">
             <form action="">
               <div>
-                <input type="text" placeholder="Name" />
+                <input type="text" placeholder="Nombres" />
               </div>
               <div>
                 <input type="email" placeholder="Email" />
               </div>
               <div>
-                <input type="text" placeholder="Phone Number" />
+                <input type="text" placeholder="Teléfono" />
               </div>
               <div>
-                <input type="text" class="message-box" placeholder="Message" />
+                <input type="text" class="message-box" placeholder="Mensaje" />
               </div>
               <div class="d-flex ">
                 <button>
-                  Send
+                  Enviar
                 </button>
               </div>
             </form>
@@ -670,17 +740,17 @@
   <section class="info_section " data-aos="fade-up">
     <div class="container">
       <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-4">
           <div class="info_contact">
             <h5>
-              About Apartment
+              Acerca del proyecto
             </h5>
             <div>
               <div class="img-box">
                 <img src="images/location.png" width="18px" alt="">
               </div>
               <p>
-                Address
+                Carretera Panamericana Sur Km 120 - Cerro Azul
               </p>
             </div>
             <div>
@@ -688,7 +758,7 @@
                 <img src="images/phone.png" width="12px" alt="">
               </div>
               <p>
-                +01 1234567890
+                +51 972 070 845
               </p>
             </div>
             <div>
@@ -696,62 +766,38 @@
                 <img src="images/mail.png" width="18px" alt="">
               </div>
               <p>
-                demo@gmail.com
+                info@kandarinmobiliaria.com
               </p>
             </div>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-4">
           <div class="info_info">
             <h5>
-              Information
+              Información
             </h5>
-            <p>
-              ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-            </p>
+            <a href="#hid1">
+              Inicio
+            </a>
+            <br>
+            <a href="#hid2">
+              Nuestra Lotizaciones
+            </a>
+            <br>
+            <a href="#hid3">
+              Como ser propietario
+            </a>
+            <br>
+            <a href="#hid4">
+              Clientes
+            </a>
+            <br>
+            <a href="#hid5">
+              Avance del proyecto
+            </a>
           </div>
         </div>
-
-        <div class="col-md-3">
-          <div class="info_links">
-            <h5>
-              Useful Link
-            </h5>
-            <ul>
-              <li>
-                <a href="">
-                  There are many
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  variations of
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  passages of
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  Lorem Ipsum
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  available, but
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  the i
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-3">
+        <div class="col-md-4">
           <div class="info_form ">
             <h5>
               Newsletter
@@ -763,17 +809,11 @@
               </button>
             </form>
             <div class="social_box">
-              <a href="">
+              <a href="https://www.facebook.com/KandarInmobiliaria" target="_blank">
                 <img src="images/fb.png" alt="">
               </a>
-              <a href="">
-                <img src="images/twitter.png" alt="">
-              </a>
-              <a href="">
-                <img src="images/linkedin.png" alt="">
-              </a>
-              <a href="">
-                <img src="images/youtube.png" alt="">
+              <a href="https://www.instagram.com/kandarinmobiliaria/" target="_blank">
+                <img src="images/logotipo-de-instagram.png" alt="">
               </a>
             </div>
           </div>

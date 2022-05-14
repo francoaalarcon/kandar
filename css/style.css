@@ -5,6 +5,10 @@ body {
   background-color: #ffffff;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 .layout_padding {
   padding-top: 90px;
   padding-bottom: 90px;
@@ -52,9 +56,9 @@ body {
 .hero_area {
   background-image: url(../images/hero-bg.jpg);
   position: relative;
-  background-repeat: no-repeat;
-  background-position: top right;
-  background-size: 60% 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 }
 
 .headerspace{
@@ -432,6 +436,61 @@ a:focus {
   color: #ffffff;
 }
 
+.formfloat{
+  width: 500px;
+  padding: 35px;
+  border-radius: 20px;
+  position: absolute;
+  right: 200px;
+  bottom: -60px;
+  background-color: #bf762e;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.formfloat h2{
+  color: white;
+  font-weight: 700;
+}
+.formfloat input {
+  width: 100%;
+  border: none;
+  background-color: #ffffff;
+  outline: none;
+  color: #252525;
+  margin-top: 15px;
+  padding: 12px;
+}
+
+.formfloat input::-webkit-input-placeholder {
+  color: #2a2a2c;
+}
+
+.formfloat input:-ms-input-placeholder {
+  color: #2a2a2c;
+}
+
+.formfloat input::-ms-input-placeholder {
+  color: #2a2a2c;
+}
+
+.formfloat input::placeholder {
+  color: #2a2a2c;
+}
+
+.formfloat input.message-box {
+  padding: 45px 12px;
+}
+
+.formfloat button {
+  padding: 10px 65px;
+  outline: none;
+  border: none;
+  color: #ffffff;
+  background: #f97616;
+  border-radius: 25px;
+  margin: 45px 0 0 auto;
+  text-transform: uppercase;
+}
+
 .about_section .square-box {
   position: absolute;
   right: 25px;
@@ -442,6 +501,18 @@ a:focus {
 .about_section .square-box img {
   width: 100%;
 }
+
+.about_section .square-box-2 {
+  position: absolute;
+  left: 25px;
+  bottom: 0;
+  width: 75px;
+}
+
+.about_section .square-box-2 img {
+  width: 100%;
+}
+
 
 .sale_section .heading_container {
   -webkit-box-align: center;
@@ -697,7 +768,7 @@ a:focus {
 }
 
 .us_section .box .img-box img {
-  width: 100%;
+  width: 25%;
 }
 
 .us_section .box h3 {
@@ -776,7 +847,7 @@ a:focus {
 .client_section .client_container div#carouselExampleControls::before {
   content: "";
   width: 50px;
-  height: 155px;
+  height: 240px;
   background-color: #bf762e;
   position: absolute;
   left: 10%;
@@ -943,6 +1014,15 @@ a:focus {
   background: #f97616;
   margin-top: 15px;
   text-transform: uppercase;
+}
+
+.info_info a{
+  color: #f9bc16;
+}
+
+.social_box img{
+  width: 30px;
+  height: 30px;
 }
 
 .info_section .info_form .social_box {
