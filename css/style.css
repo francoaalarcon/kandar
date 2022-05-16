@@ -494,6 +494,16 @@ a:focus {
   margin: 45px 0 0 auto;
   text-transform: uppercase;
 }
+.formfloat input[type=submit]{
+  padding: 10px 65px;
+  outline: none;
+  border: none;
+  color: #ffffff;
+  background: #f97616;
+  border-radius: 25px;
+  margin: 45px 0 0 auto;
+  text-transform: uppercase;
+}
 
 .about_section .square-box {
   position: absolute;
